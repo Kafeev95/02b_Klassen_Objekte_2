@@ -15,30 +15,39 @@ public class Cat
     }
     /* Getter */
     public String getName() {
-        return name;
-    }
+        if (getPermission()) {
+            return name;
+        } else {
+            return "Sorry, no permission!";
+        }
+
+}
     public String getFurColor() {
         return furColor;
     }
     public int getAge() {
         return age;
-    }
+ }
 
     /* Setter */
     public void setName(String name) {
         this.name = name;
-    }
+}
     public void setFurColor(String furColor) {
         this.furColor = furColor;
-    }
+ }
     public void setAge(int age) {
         this.age = age;
-    }
+}
 
+private boolean getPermission(){
+    return true;
+    // return false;
+}
 
     // Rückgabetyp -- Cat
     public Cat getInstanceVariable(){
         return this;
-    }
+}
 
 }
