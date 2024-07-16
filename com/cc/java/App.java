@@ -7,33 +7,21 @@ public class App {
         // Instanziierung  --> Erzeugen eines Objektes
         // System.out.println(new Cat());
 
-        // cat --> Referenzvariable
-        // Cat --> Referenztyp(Klasse)
-        Cat cat = new Cat();
+        // Custom-Konstraktor
+        Cat cat = new Cat("Grizabella", "wihte", 29);
         output("Blick von aussen: " + cat);
         output("Blick von innen: " + cat.getInstanceVariable());
 
-        // Werte setzen
-        cat.name = "Grizabella";
-        cat.furColor = "wihte";
-        cat.age = 29;
-
-        // Werte setzen
+       // Werte ausgeben
         output(cat.name);
         output(cat.furColor);
-        // Explizite Typumwandlung
         output(Integer.toString(cat.age));
 
         System.out.println("----------------------------");
 
-        Cat cat2 = new Cat();
+        Cat cat2 = new Cat("Alonzo", "grey", 35);
         output("Blick von aussen: " + cat2);
         output("Blick von innen: " + cat2.getInstanceVariable());
-
-        // Werte setzen
-        cat2.name = "Alonzo";
-        cat2.furColor = "grey";
-        cat2.age = 35;
 
         // Werte ausgeben
         output(cat2.name);
