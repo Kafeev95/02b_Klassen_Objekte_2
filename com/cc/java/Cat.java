@@ -2,20 +2,39 @@ package com.cc.java;
 
 public class Cat 
 {
-    // Eigenschaften / properties
-    // Felder / fields / attributes
+    
+    private String name;
+    private String furColor;
+    private int age;
 
-    // pass by reference
-    public String name;
-    public String furColor;
-    // pass by value
-    public int age;
-
+    // Konstruktor (keinen Rückgabetyp)
     public Cat(String name, String furColor, int age) {
         this.name = name;
         this.furColor = furColor;
         this.age = age;
     }
+    /* Getter */
+    public String getName() {
+        return name;
+    }
+    public String getFurColor() {
+        return furColor;
+    }
+    public int getAge() {
+        return age;
+    }
+
+    /* Setter */
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setFurColor(String furColor) {
+        this.furColor = furColor;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+
 
     // Rückgabetyp -- Cat
     public Cat getInstanceVariable(){
