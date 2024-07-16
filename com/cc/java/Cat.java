@@ -13,6 +13,10 @@ public class Cat
         this.furColor = furColor;
         this.age = age;
     }
+    // Rückgabetyp -- Cat
+    public Cat getInstanceVariable(){
+        return this;
+}
     /* Getter */
     public String getName() {
         if (getPermission()) {
@@ -30,9 +34,9 @@ public class Cat
  }
 
     /* Setter */
-    public void setName(String name) {
-        this.name = name;
-}
+//     public void setName(String name) {
+//         this.name = name; // Name soll von außen nicht geändert werden
+// }
     public void setFurColor(String furColor) {
         this.furColor = furColor;
  }
@@ -45,9 +49,6 @@ private boolean getPermission(){
     // return false;
 }
 
-    // Rückgabetyp -- Cat
-    public Cat getInstanceVariable(){
-        return this;
-}
+    
 
 }
